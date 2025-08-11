@@ -1,0 +1,8 @@
+<!-- Файл: favicon.svg -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <rect fill="#0b0b0f" width="128" height="128" rx="20"></rect>
+  <g font-family="Inter, Arial, sans-serif" font-weight="700">
+    <text x="18" y="78" font-size="64" fill="#ffffff">K</text>
+    <circle cx="96" cy="32" r="10" fill="#8f7bff"></circle>
+  </g>
+</svg>

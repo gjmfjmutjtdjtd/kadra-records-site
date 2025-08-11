@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<!-- Файл: index.html -->
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>KADRA Records — студия звукозаписи в Бали, Москве и Волгограде</title>
+  <meta name="description" content="KADRA Records — запись, сведение, мастеринг, биты и продюсирование. Студии в Бали, Москве и Волгограде. Услуги онлайн и оффлайн." />
+  <meta property="og:title" content="KADRA Records — студия звукозаписи" />
+  <meta property="og:description" content="Запись, сведение, мастеринг, биты и продюсирование. Работаем оффлайн и удалённо." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="images/hero-bali.jpg" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <!-- AOS (анимация при скролле) -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Swiper (галерея) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MusicGroup",
+    "name": "KADRA Records",
+    "url": "https://your-domain.ru",
+    "logo": "https://your-domain.ru/favicon.svg",
+    "sameAs": [
+      "https://instagram.com/your_inst",
+      "https://youtube.com/your_channel"
+    ],
+    "hasPOS": [
+      {
+        "@type":"Place",
+        "name":"KADRA Records — Bali",
+        "address": {"@type":"PostalAddress","addressLocality":"Bali","addressCountry":"ID"}
+      },
+      {
+        "@type":"Place",
+        "name":"KADRA Records — Moscow",
+        "address": {"@type":"PostalAddress","addressLocality":"Москва","addressCountry":"RU"}
+      },
+      {
+        "@type":"Place",
+        "name":"KADRA Records — Volgograd",
+        "address": {"@type":"PostalAddress","addressLocality":"Волгоград","addressCountry":"RU"}
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#">
+        <!-- Inline SVG logo -->
+        <svg width="140" height="36" viewBox="0 0 280 72" xmlns="http://www.w3.org/2000/svg" aria-labelledby="logoTitle">
+          <title id="logoTitle">KADRA Records</title>
+          <rect width="280" height="72" rx="8" fill="none"/>
+          <text x="12" y="46" font-family="Inter, sans-serif" font-weight="700" font-size="36" fill="#ffffff">KADRA</text>
+          <text x="170" y="46" font-family="Inter, sans-serif" font-weight="400" font-size="20" fill="#d1c7ff">Records</text>
+        </svg>
+      </a>
+
+      <nav class="nav">
+        <a href="#services">Услуги</a>
+        <a href="#portfolio">Портфолио</a>
+        <a href="#prices">Цены</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="btn btn-ghost" id="btn-remote">Удалённое сведение</button>
+        <button class="btn btn-primary" id="btn-book" data-scroll="#form">Записаться</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <video class="hero-video" autoplay muted loop playsinline poster="images/hero-bali.jpg">
+        <source src="images/hero-loop.mp4" type="video/mp4">
+      </video>
+      <div class="overlay"></div>
+      <div class="container hero-inner">
+        <div class="hero-content" data-aos="fade-up">
+          <h1>KADRA Records — студия звукозаписи в Бали, Москве и Волгограде</h1>
+          <p class="lead">Запишем, сведём и выпустим ваш трек мирового уровня — очно или удалённо. Биты, сведение, мастеринг и продюсирование.</p>
+          <div class="hero-ctas">
+            <a class="btn btn-primary" href="#form">Оставить заявку</a>
+            <a class="btn btn-ghost" href="#portfolio">Послушать работы</a>
+          </div>
+        </div>
+
+        <aside class="hero-locations" data-aos="fade-left">
+          <div class="loc-card">
+            <h4>Бали</h4>
+            <p>Студия с видом на океан — идеальна для вдохновения.</p>
+          </div>
+          <div class="loc-card">
+            <h4>Москва</h4>
+            <p>Премиальный аппаратный парк и профессиональная команда.</p>
+          </div>
+          <div class="loc-card">
+            <h4>Волгоград</h4>
+            <p>Уютная студия и выгодные пакеты для локальных артистов.</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Why we -->
+    <section id="why" class="section">
+      <div class="container" data-aos="fade-up">
+        <h2>Почему артисты выбирают KADRA Records</h2>
+        <div class="grid why-grid">
+          <div class="card">
+            <i class="fa-solid fa-signal"></i>
+            <h3>3 локации</h3>
+            <p>Бали, Москва и Волгоград — единый стандарт качества и атмосфера для творчества.</p>
+          </div>
+          <div class="card">
+            <i class="fa-solid fa-microphone"></i>
+            <h3>Проф оборудование</h3>
+            <p>Neumann, UAD, SSL-плагины, студийные мониторы — звук, который продаёт.</p>
+          </div>
+          <div class="card">
+            <i class="fa-solid fa-headphones"></i>
+            <h3>Удалённая работа</h3>
+            <p>Пришлите stems — мы сведём и вернём готовый релиз с отчётом по правкам.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="section section-alt">
+      <div class="container" data-aos="fade-up">
+        <h2>Наши услуги</h2>
+        <div class="grid services-grid">
+          <article class="service-card">
+            <h3>Запись вокала</h3>
+            <p>Чистый звук, монтаж дублей, редактирование. Цена от <strong>25 $</strong>.</p>
+            <a class="btn btn-ghost" href="#form" data-service="Запись вокала">Заказать</a>
+          </article>
+
+          <article class="service-card">
+            <h3>Сведение & Mastering</h3>
+            <p>Баланс, глубина, готовность к стриминг-площадкам. Стандарт — <strong>190 $</strong>.</p>
+            <a class="btn btn-ghost" href="#form" data-service="Сведение & Mastering">Заказать</a>
+          </article>
+
+          <article class="service-card">
+            <h3>Бит под ключ</h3>
+            <p>Индивидуальный бит под ваш стиль. Цены от <strong>120 $</strong>.</p>
+            <a class="btn btn-ghost" href="#form" data-service="Бит под ключ">Купить бит</a>
+          </article>
+
+          <article class="service-card">
+            <h3>Сонграйтинг</h3>
+            <p>Тексты, мелодии, структура песни. От <strong>250 $</strong>.</p>
+            <a class="btn btn-ghost" href="#form" data-service="Сонграйтинг">Заказать</a>
+          </article>
+
+          <article class="service-card">
+            <h3>Удалённое сведение</h3>
+            <p>Отправляете треки — мы выполняем сведение, отчёт правок и мастеринг.</p>
+            <a class="btn btn-ghost" href="#form" data-service="Удалённое сведение">Заказать</a>
+          </article>
+
+          <article class="service-card">
+            <h3>Продюсирование</h3>
+            <p>Полный цикл — от идеи до релиза. Индивидуальная смета.</p>
+            <a class="btn btn-ghost" href="#form" data-service="Продюсирование">Узнать подробнее</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="section">
+      <div class="container" data-aos="fade-up">
+        <h2>Примеры работ</h2>
+
+        <div class="portfolio-player">
+          <div class="audio-row">
+            <div class="audio-meta">
+              <strong>Трек A — до/после сведения</strong>
+              <p>Жанр: Pop / Продюсер: KADRA</p>
+            </div>
+            <audio controls preload="none">
+              <source src="audio/sample1.mp3" type="audio/mpeg">
+              Ваш браузер не поддерживает аудио.
+            </audio>
+          </div>
+
+          <div class="audio-row">
+            <div class="audio-meta">
+              <strong>Трек B — сведение и мастеринг</strong>
+              <p>Жанр: Trap / Инженер: Иван</p>
+            </div>
+            <audio controls preload="none">
+              <source src="audio/sample2.mp3" type="audio/mpeg">
+              Ваш браузер не поддерживает аудио.
+            </audio>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process -->
+    <section id="process" class="section section-alt">
+      <div class="container" data-aos="fade-up">
+        <h2>Как мы работаем</h2>
+        <ol class="process-list">
+          <li><strong>Оставляете заявку</strong> — форма на сайте или мессенджер.</li>
+          <li><strong>Бриф и оплата</strong> — согласуем дедлайны и технические детали.</li>
+          <li><strong>Работа</strong> — запись в студии или удалённое сведение.</li>
+          <li><strong>Доработки и финал</strong> — пока вы не скажете «всё ок».</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Prices -->
+    <section id="prices" class="section">
+      <div class="container" data-aos="fade-up">
+        <h2>Цены и пакеты</h2>
+        <div class="grid price-grid">
+          <div class="price-card">
+            <h3>Basic</h3>
+            <p>Запись вокала + базовый монтаж</p>
+            <div class="price">от 25 $</div>
+            <a class="btn btn-ghost" href="#form" data-package="Basic">Заказать</a>
+          </div>
+          <div class="price-card">
+            <h3>Pro</h3>
+            <p>Сведение + мастеринг</p>
+            <div class="price">190 $</div>
+            <a class="btn btn-ghost" href="#form" data-package="Pro">Заказать</a>
+          </div>
+          <div class="price-card">
+            <h3>Premium</h3>
+            <p>Полное продюсирование + релиз-план</p>
+            <div class="price">индивидуально</div>
+            <a class="btn btn-ghost" href="#form" data-package="Premium">Узнать</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews -->
+    <section id="reviews" class="section section-alt">
+      <div class="container" data-aos="fade-up">
+        <h2>Отзывы артистов</h2>
+        <div class="grid reviews-grid">
+          <blockquote class="review">
+            <p>"KADRA сделали мой трек живым — профессионализм на высоте."</p>
+            <cite>— Артист A</cite>
+          </blockquote>
+          <blockquote class="review">
+            <p>"Удалённое сведение прошло быстро и качественно. Результат выше ожиданий."</p>
+            <cite>— Артист B</cite>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact / Form -->
+    <section id="contacts" class="section">
+      <div class="container" data-aos="fade-up">
+        <h2>Оставьте заявку</h2>
+        <p>Опишите задачу — и мы свяжемся в течение часа.</p>
+
+        <form id="leadForm" class="lead-form" action="handler.php" method="post" novalidate>
+          <div class="form-grid">
+            <label>
+              Имя *
+              <input type="text" name="name" required maxlength="100" />
+            </label>
+
+            <label>
+              Телефон / WhatsApp *
+              <input type="tel" name="phone" id="phone" required placeholder="+7 (___) ___-__-__" />
+            </label>
+
+            <label>
+              Email
+              <input type="email" name="email" placeholder="mail@example.com" />
+            </label>
+
+            <label>
+              Город / Локация
+              <select name="city">
+                <option value="Москва">Москва</option>
+                <option value="Волгоград">Волгоград</option>
+                <option value="Бали">Бали</option>
+                <option value="Онлайн">Онлайн</option>
+              </select>
+            </label>
+
+            <label>
+              Услуга
+              <select name="service">
+                <option>Запись вокала</option>
+                <option>Сведение & Mastering</option>
+                <option>Бит под ключ</option>
+                <option>Сонграйтинг</option>
+                <option>Удалённое сведение</option>
+                <option>Продюсирование</option>
+              </select>
+            </label>
+
+            <label>
+              Бюджет
+              <select name="budget">
+                <option>до 50 $</option>
+                <option>50–200 $</option>
+                <option>200–500 $</option>
+                <option>500 $+</option>
+              </select>
+            </label>
+
+            <label class="full">
+              Комментарий
+              <textarea name="message" rows="4" placeholder="Опишите задачу, жанр, дедлайн"></textarea>
+            </label>
+
+            <!-- honeypot -->
+            <label class="honeypot" style="display:none;">
+              Website
+              <input type="text" name="website" />
+            </label>
+
+            <label class="consent full">
+              <input type="checkbox" name="consent" required />
+              Я согласен на обработку персональных данных.
+            </label>
+          </div>
+
+          <input type="hidden" name="utm_source" id="utm_source" value="" />
+          <input type="hidden" name="utm_medium" id="utm_medium" value="" />
+          <input type="hidden" name="utm_campaign" id="utm_campaign" value="" />
+
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary">Отправить заявку</button>
+            <div id="formMessage" class="form-message" role="status" aria-live="polite"></div>
+          </div>
+        </form>
+
+        <div class="studio-contacts">
+          <div><strong>Москва</strong> — +7 900 000 0000</div>
+          <div><strong>Волгоград</strong> — +7 900 000 0001</div>
+          <div><strong>Бали</strong> — +62 812 0000 000</div>
+          <div>Email: <a href="mailto:info@kadra-records.ru">info@kadra-records.ru</a></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <small>© <span id="year"></span> KADRA Records — Все права защищены</small>
+      </div>
+      <div class="footer-right">
+        <nav>
+          <a href="#privacy">Политика</a>
+          <a href="#contacts">Контакты</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Скрипты -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/inputmask@5.0.8/dist/inputmask.min.js"></script>
+  <script src="script.js"></script>
+  <script>
+    // Инициализация AOS
+    AOS.init({ once: true, duration: 700 });
+  </script>
+</body>
+</html>
