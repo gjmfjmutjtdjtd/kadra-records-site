@@ -381,5 +381,20 @@
     // Инициализация AOS
     AOS.init({ once: true, duration: 700 });
   </script>
+<!-- Всплывающее окно -->
+<div id="popupForm" class="popup">
+  <div class="popup-content">
+    <span class="close-btn" id="closePopup">&times;</span>
+    <h2>Заполните форму</h2>
+    <form id="contactForm">
+      <label>Имя:</label>
+      <input type="text" name="name" required>
+      <label>Номер телефона:</label>
+      <input type="tel" name="phone" required>
+      <button type="submit">Отправить</button>
+    </form>
+  </div>
+</div>
 </body>
 </html>
+
