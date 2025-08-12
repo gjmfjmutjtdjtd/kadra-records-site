@@ -119,32 +119,3 @@ label.full{grid-column:1/-1}
   .hero-locations{width:100%}
   .nav{display:none}
 }
-/* Фон затемнения */
-.popup {
-  display: none; /* скрыто по умолчанию */
-  position: fixed;
-  z-index: 1000;
-  left: 0; top: 0;
-  width: 100%; height: 100%;
-  background: rgba(0, 0, 0, 0.6);
-}
-
-/* Окно формы */
-.popup-content {
-  background: #fff;
-  padding: 20px;
-  border-radius: 8px;
-  width: 300px;
-  margin: 100px auto;
-  position: relative;
-}
-
-/* Кнопка закрытия */
-.close-btn {
-  position: absolute;
-  right: 10px; top: 10px;
-  cursor: pointer;
-  font-size: 18px;
-}
-
-
